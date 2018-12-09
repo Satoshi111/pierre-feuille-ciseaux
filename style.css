@@ -1,0 +1,79 @@
+body{
+	background-color: #111;	
+}
+
+.containers {
+	
+	/*padding: 40px;
+	margin: 100px 200px 100px 200px;*/
+	width: 700px;
+	margin: 2em auto;/*auto permet de centrer*/
+	font-family: Impact, Charcoal, sans-serif
+	line-height: 3em;
+	font-size: 1.1em;
+}
+
+.header {
+	background-color: Maroon;
+	border: 3px solid black;
+	border-radius: 12px;
+	padding: 20px;
+	color: DarkSlateGray;/*changer couleur du contenu*/
+	text-align: center;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.6em;
+}
+
+.header--icons {
+	font-size: 2.3em;
+	text-shadow: 2px 2px 2px black;
+}
+
+section {
+	background-color: MidnightBlue;
+	border: 3px solid black;
+	border-radius: 10px;
+	margin-top: 1em;
+}
+
+.intro {
+	overflow: hidden;
+}
+
+.intro--header {
+	margin-left: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.btn--regles {
+	margin-right: 30px;
+	border-radius: 100%;
+	width: 2em;
+	height: 2em;
+	font-size: 20px;
+	background-color: Maroon;
+	border: 2px solid black;
+	cursor: pointer;
+}
+
+.btn--collapse:focus {
+	outline: none;
+}
+
+.intro--containt {
+	/*display: flex; utile? */
+	justify-content: space-around;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+.jeu {
+}

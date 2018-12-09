@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr"	>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="with=device-width", initial-scale=1.0"/>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+	<title> Pierre Feuille Ciseaux</title>
+	<link rel="stylesheet" href="CSS/style.css"/>
+	<!-- FontAwesome -->
+  	<link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+</head>
+<body>
+	<!--containers contient toute la première partie -->
+	<div class="containers">
+		
+		<!--Bloc Bannière -->
+		<header class="header">
+			<h1 class="Title"> Pierre, Feuille, Ciseaux</h1>
+			<div class="header--icons">
+				<!-- 	Mettre les images associées à pierre, feuille et ciseau 
+						Elles ont été récupérées sur le site "FontAwesome"		-->
+				<i class="fas fa-hand-rock"></i>
+        		<i class="fas fa-hand-paper"></i>
+        		<i class="fas fa-hand-scissors"></i>
+			</div>
+
+		</header>
+
+
+		<!--Bloc règles du jeu -->
+		<section class="intro">
+			
+			<!--Entête des règles visible initialement-->
+			<div class="intro--header">
+				<h2 class="subtitle"> Règles du jeu </h2>
+				<button class="btn--regles"></button>
+			</div>
+
+			<!--Règles accessibles en appuyant sur le bouton "btn--regles"-->
+			<div class="intro--containt">
+				<div class="regles">
+					<p class="regles">
+						<i class="fas fa-hand-rock"></i> casse <i class="fas fa-hand-scissors"></i>
+					</p>
+					<p class="regles">
+						<i class="fas fa-hand-scissors"></i> coupe <i class="fas fa-hand-paper"></i>
+					</p>
+					<p class="règles">
+						<i class="fas fa-hand-paper"></i> emprisonne <i class="fas fa-hand-rock"></i>
+					</p>
+				
+				</div>
+			</div>
+		</section>
+
+
+		<!--Bloc de déroulement du jeu-->
+		<section class="jeu">
+
+			<!-- Menu début partie -->
+			<div class="menu">
+				<h2 class="subtitle"> Paramètres du jeu </h2>
+				<div class="parametresJeu">
+				
+				<!--Formulaire nécessaire au lancement du jeu-->
+				<form action="" class="parametreJeu">
+					<label for="pseudo"> Nom :</label>
+					<input type="text" name="pseudo" placeholder="Entrez votre nom ici"><br/><br/>
+
+					<label for="nbTours"> Nombre de Tours : </label>
+					<input type="radio" name="nbTours" value="3" id="3">
+					<label for="3">3</label>
+					<input type="radio" name="nbTours" value="5" id="5">
+					<label for="5">5</label>
+					<input type="radio" name="nbTours" value="7" id="7">
+					<label for="7">7</label>
+				</form>
+
+				<p class="error">Remplissez les champs au-dessus !</p>
+				<button class="btn--lancerPartie">Commencer la partie</button>
+			</div>
+
+			<!--Affichage du jeu
+				Partie visible une fois le formulaire correctement rempli et envoyé-->
+			<div class="affichage--jeu">
+				
+				<div class="tableau2jeu">
+					<div class="joueur">
+						<div class="main"></div>
+						<p class="nom">Moi</p>
+						<div class="score_joueur"></div>
+					</div>
+					<div class="ordi">
+						<div class="main"></div>
+						<p class="nom">Ordi</p>
+						<div class="score_ordi"></div>
+					</div>
+				</div>
+
+				<div class="hands"></div>
+        		<div class="end">
+          			<span class="end--text"></span>
+          			<button class="btn btn--replay"><i class="fas fa-redo-alt"></i> Replay</button>
+        		</div>
+
+			</div>			
+		</section>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 	<script src="js/app.js"></script>
+</body>
+</html>
