@@ -1,3 +1,7 @@
+/*Couleur :	bleu: #227
+			gris: #AAA*/
+
+
 body{
 	background-color: #333;	
 }
@@ -43,6 +47,9 @@ section {
 	margin-top: 1em;
 }
 
+
+/*---------------------- PARTIE REGLES ----------------------*/
+
 .intro {
 	overflow: hidden;
 }
@@ -70,17 +77,124 @@ section {
 }
 
 .intro--containt {
-	/*display: flex; utile? */
+	display: flex;
 	justify-content: space-around;
 	text-align: center;
 	font-size: 1.2em;
 	color: #111;
+	box-sizing: border-box;
+	/*display: none;Cacher*/
 }
+
+/*-------------------------PARTIE JEU-------------------------*/
 
 .jeu {
-	padding-left: 20px;
+	overflow: hidden; /*cacher*/
+	
 }
 
-.button-lancerPartie {
-	
+.menu {
+	padding: 20px;
+	font-size: 150%;
+}
+
+.menu h2 {
+	margin-bottom:  40px;
+}
+
+.nbTours {
+	align-items: center;
+}
+
+input[type="text"] {
+	border-radius: 6px;
+	border: none;
+	font-size: 100%;
+	margin-left: 20px;
+	padding-left: 25px;
+
+}
+
+.error {
+	color: #AAA; 
+	background-color: #911;
+	padding: 10px 20px;
+	border-radius: 8px;
+
+}
+
+/*Je n'arrive pas à modifier le bouton lancerPartie*/
+#btn--lancerPartie { 
+	display: none;
+	font-size: 100%;
+	color:brown;
+	background-color: blue;
+}
+
+.btn--lancerPartie { 
+	display: none;
+	font-size: 100%;
+	color:brown;
+	background-color: blue;
+}
+/*fin boutons lancer partie*/
+
+
+/*------ PARTIE ACCESSIBLE APRES ENVOIE DU FORMULAIRE ------*/
+
+/*.affichage--jeu {
+	display: none;
+}*/
+
+.tableau2jeu {
+	display: flex;
+	padding: 20px 10px;
+	text-align: center;
+}
+
+.joueur, .ordi {
+	width: 50%;
+}
+
+.main {
+	box-sizing:  border-box;
+	margin: 0 auto;
+	border: 3px solid #227;
+	width: 200px;
+	height: 200px;
+	border-radius: 10px;
+}
+
+.score {
+	width: 200px;
+	height: 30px;
+	color: yellow;
+}
+
+
+/*------Selection du type d'action------*/
+
+
+.hands {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.end {
+  /*display: none;*/
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.btn--replay {
+	background-color: #227;
+	color: #AAA;
+	border: none;
+	border-radius: 6px;
+	font-size: 100%
 }
