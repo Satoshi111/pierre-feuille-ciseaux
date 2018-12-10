@@ -1,5 +1,5 @@
 body{
-	background-color: #111;	
+	background-color: #333;	
 }
 
 .containers {
@@ -14,11 +14,11 @@ body{
 }
 
 .header {
-	background-color: Maroon;
+	background-color: #999;
 	border: 3px solid black;
 	border-radius: 12px;
 	padding: 20px;
-	color: DarkSlateGray;/*changer couleur du contenu*/
+	color: #227;/*changer couleur du contenu*/
 	text-align: center;
 }
 
@@ -28,6 +28,7 @@ h1 {
 
 h2 {
 	font-size: 1.6em;
+	color: #227;
 }
 
 .header--icons {
@@ -36,7 +37,7 @@ h2 {
 }
 
 section {
-	background-color: MidnightBlue;
+	background-color: /*MidnightBlue*/ #AAA;
 	border: 3px solid black;
 	border-radius: 10px;
 	margin-top: 1em;
@@ -47,7 +48,7 @@ section {
 }
 
 .intro--header {
-	margin-left: 10px;
+	margin-left: 20px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -59,7 +60,7 @@ section {
 	width: 2em;
 	height: 2em;
 	font-size: 20px;
-	background-color: Maroon;
+	background-color: #227;
 	border: 2px solid black;
 	cursor: pointer;
 }
@@ -73,7 +74,13 @@ section {
 	justify-content: space-around;
 	text-align: center;
 	font-size: 1.2em;
+	color: #111;
 }
 
 .jeu {
+	padding-left: 20px;
+}
+
+.button-lancerPartie {
+	
 }
